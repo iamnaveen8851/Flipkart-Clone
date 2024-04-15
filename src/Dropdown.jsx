@@ -13,6 +13,10 @@ import {
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 const Dropdown = () => {
   const [isProductOpen, setIsProductOpen] = useState(false);
+  const [isElectronics, setIsElectronics] = useState(false);
+  const [isFurniture, setIsFurniture] = useState(false);
+  const [isBeauty, setIsBeauty] = useState(false);
+  const [isTwoWheelers, setIsTwoWheelers] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <SimpleGrid boxShadow="lg" m="auto" p={5} w="97%" columns={9} spacing={10}>
@@ -57,7 +61,7 @@ const Dropdown = () => {
               </Text>
             </Box>
           </MenuButton>
-          <MenuList >
+          <MenuList>
             <MenuItem>Download</MenuItem>
             <MenuItem>Create a Copy</MenuItem>
             <MenuItem>Mark as Draft</MenuItem>
@@ -68,27 +72,57 @@ const Dropdown = () => {
       </Box>
 
       {/* Electronics */}
-      <Box>
-        <Box>
-          <Image src="https://rukminim2.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100" />
-        </Box>
-        <Box>
-          <Text fontWeight="550" textAlign="center" fontSize="16px">
-            Electronics <ChevronDownIcon />
-          </Text>
-        </Box>
+      <Box
+        onMouseEnter={() => setIsElectronics(true)}
+        onMouseLeave={() => setIsElectronics(false)}
+      >
+        <Menu isOpen={isElectronics}>
+          <MenuButton>
+            <Box>
+              <Image src="https://rukminim2.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100" />
+            </Box>
+            <Box>
+              <Text fontWeight="550" textAlign="center" fontSize="16px">
+                Electronics{" "}
+                {isElectronics ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Text>
+            </Box>
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
 
       {/* Home & Furniture */}
-      <Box>
-        <Box>
-          <Image src="https://rukminim2.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100" />
-        </Box>
-        <Box>
-          <Text fontWeight="550" textAlign="center" fontSize="16px">
-            Home & Furniture <ChevronDownIcon />
-          </Text>
-        </Box>
+      <Box
+        onMouseEnter={() => setIsFurniture(true)}
+        onMouseLeave={() => setIsFurniture(false)}
+      >
+        <Menu isOpen={isFurniture}>
+          <MenuButton>
+            <Box>
+              <Image src="https://rukminim2.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100" />
+            </Box>
+            <Box>
+              <Text fontWeight="550" textAlign="center" fontSize="16px">
+                Home & Furniture
+                {isFurniture ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Text>
+            </Box>
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
 
       {/* Appliances */}
@@ -116,28 +150,61 @@ const Dropdown = () => {
       </Box>
 
       {/* Beauty, Toys & More */}
-      <Box>
-        <Box>
-          <Image src="https://rukminim2.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100" />
-        </Box>
-        <Box>
-          <Text fontWeight="550" textAlign="center" fontSize="16px">
-            Beauty, Toys & More <ChevronDownIcon />
-          </Text>
-        </Box>
+      <Box
+        onMouseEnter={() => setIsBeauty(true)}
+        onMouseLeave={() => setIsBeauty(false)}
+      >
+        <Menu isOpen={isBeauty}>
+          <MenuButton>
+            <Box>
+              <Image src="https://rukminim2.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100" />
+            </Box>
+            <Box>
+              <Text fontWeight="550" textAlign="center" fontSize="16px">
+                Beauty, Toys & More
+                {isBeauty ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Text>
+            </Box>
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
 
       {/* Two Wheelers  */}
-      <Box>
-        <Box>
-          <Image src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100" />
-        </Box>
-        <Box>
-          <Text fontWeight="550" textAlign="center" fontSize="16px">
-            Two Wheelers <ChevronDownIcon />
-          </Text>
-        </Box>
+      <Box
+        onMouseEnter={() => setIsTwoWheelers(true)}
+        onMouseLeave={() => setIsTwoWheelers(false)}
+      >
+        <Menu isOpen={isTwoWheelers}>
+          <MenuButton>
+            <Box>
+            <Image src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100" />
+            </Box>
+            <Box>
+              <Text fontWeight="550" textAlign="center" fontSize="16px">
+              Two Wheelers 
+                {isTwoWheelers ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Text>
+            </Box>
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
+
+
+     
     </SimpleGrid>
   );
 };
