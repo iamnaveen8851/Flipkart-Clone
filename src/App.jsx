@@ -1,19 +1,20 @@
-
-import './App.css'
-import Electronics from './components/Electronics'
-import Navbar from './components/Navbar'
-import SimpleSlider from './components/SimpleSlider'
+import "./App.css";
+import Dropdown from "./Dropdown";
+import Electronics from "./components/Electronics";
+import Navbar from "./components/Navbar";
+import SimpleSlider from "./components/SimpleSlider";
 function App() {
-  
-
   return (
     <>
-     <Navbar/>
-   <SimpleSlider/>
-   <br />
-   <Electronics/>
+      <Navbar />
+      <br />
+      <Dropdown />
+      <br />
+      <SimpleSlider />
+      <br />
+      <Electronics />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -19,6 +19,7 @@ import {
   HamburgerIcon,
 } from "@chakra-ui/icons";
 import { useState } from "react";
+import { color } from "framer-motion";
 
 function LoginIcon() {
   return (
@@ -131,7 +132,10 @@ const Navbar = () => {
 
   return (
     <Flex
-      border={"1px solid black"}
+    
+     top="0"
+      // border={"1px solid black"}
+      boxShadow='lg'
       p={3}
       minWidth="max-content"
       alignItems="center"
@@ -165,20 +169,20 @@ const Navbar = () => {
             transition="all 0.2s"
             border="none"
             borderWidth="1px"
+            _hover={{backgroundColor : "#1d62f5",color : "white" ,borderRadius: "10px"}}
             onMouseEnter={() => setIsThreeDotsOpen(true)}
             onMouseLeave={() => setIsThreeDotsOpen(false)}
-            // onClick={() => setIsLoginMenuOpen(!isLoginMenuOpen)}
-            // pointerEvents={isLoginMenuOpen ? "auto" : "none"}
+            
           >
             <Box
               display={"flex"}
               justifyContent={"space-around"}
               alignItems={"center"}
             >
-              <Box pt="3px">
+              <Box _hover={{color : "white"}} pt="3px">
                 <LoginIcon />
               </Box>
-              <Box pl={"5px"} fontSize="17px" color="#2D3748">
+              <Box  _hover={{color : "white"}}  pl={"5px"} fontSize="17px" color="#2D3748">
                 Login
                 {isthreeDotesOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
               </Box>
