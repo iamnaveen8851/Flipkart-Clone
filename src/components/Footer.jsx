@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Box, Text } from "@chakra-ui/react";
 const Footer = () => {
   return (
-    <Flex p={10} bg="black" justifyContent="space-evenly" alignItems="center">
+    <Flex p={10} bg="RGBA(0, 0, 0, 0.92)" justifyContent="space-evenly" alignItems="center">
       <Box
         color="white"
         display="flex"
@@ -45,14 +45,17 @@ const Footer = () => {
           </Box>
         </Box>
       </Box>
+      
 
       <Box
+      borderLeft={"1px solid white"}
         color="white"
         display="flex"
         justifyContent="space-around"
         alignItems="center"
-        gap="10px"
+        gap="20px"
       >
+        &nbsp;
           <Box>
           MAIL US
           <br />
@@ -81,10 +84,10 @@ const Footer = () => {
         </Box>
         <Box>REGISTERED ADDRESS
         <Box>
-            <Text> Contact Us</Text>
-            <Text> About Us</Text>
-            <Text> Careers Us</Text>
-            <Text> Flipkart Stories</Text>
+            <Text>Flipkart Private Limited</Text>
+            <Text>Building Alyssia Begonia</Text>
+            <Text>Bengaluru 560103</Text>
+            <Text>Karnatka, India</Text>
           </Box>
         </Box>
       
