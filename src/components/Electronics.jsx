@@ -98,9 +98,15 @@ const Electronics = () => {
         <br />
         <Slider {...settings}>
           {items.map((item, i) => (
-            <Box boxShadow='2xl' borderRadius="5px" key={i}>
+            <Box
+            //  boxShadow='2xl'
+            border="1px solid"
+            borderColor="gray.300"
+             borderRadius="3px"
+             p={2}
+              key={i}>
               <Box>
-                <Image w="200px" h="200px" src={item.img} alt="" />
+                <Image w="200px" h="175px" src={item.img} alt="" />
               </Box>
               <Box>
                 <Text textAlign="center">{item.title}</Text>

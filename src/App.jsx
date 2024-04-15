@@ -1,5 +1,6 @@
 import "./App.css";
 import Dropdown from "./Dropdown";
+import OffersCards from "./OffersCards";
 import Electronics from "./components/Electronics";
 import Navbar from "./components/Navbar";
 import SimpleSlider from "./components/SimpleSlider";
@@ -13,6 +14,8 @@ function App() {
       <SimpleSlider />
       <br />
       <Electronics />
+      <br />
+      <OffersCards/>
     </>
   );
 }

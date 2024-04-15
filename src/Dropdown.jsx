@@ -10,7 +10,11 @@ import {
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
-import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import {
+  ChevronDownIcon,
+  ChevronRightIcon,
+  ChevronUpIcon,
+} from "@chakra-ui/icons";
 const Dropdown = () => {
   const [isProductOpen, setIsProductOpen] = useState(false);
   const [isElectronics, setIsElectronics] = useState(false);
@@ -18,6 +22,13 @@ const Dropdown = () => {
   const [isBeauty, setIsBeauty] = useState(false);
   const [isTwoWheelers, setIsTwoWheelers] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isMenBottomWear, setMenBottomWear] = useState(false);
+  const [isWomenWear, setWomenWear] = useState(false);
+  const [isFootwear, setFootwear] = useState(false);
+  const [isWomenFootWear, setWomenFootwear] = useState(false);
+  const [isAudio, setIsAudio] = useState(false);
+  const [isMensGroom, setIsMensGroom] = useState(false)
+
   return (
     <SimpleGrid boxShadow="lg" m="auto" p={5} w="97%" columns={9} spacing={10}>
       {/* Grocery */}
@@ -62,10 +73,115 @@ const Dropdown = () => {
             </Box>
           </MenuButton>
           <MenuList>
-            <MenuItem>Men's Bottom Wear </MenuItem>
-            <MenuItem>Women's Ethnic</MenuItem>
-            <MenuItem>Men Footwear</MenuItem>
-            <MenuItem>Women Footwear</MenuItem>
+            <MenuItem
+              onMouseEnter={() => setMenBottomWear(true)}
+              onMouseLeave={() => setMenBottomWear(false)}
+            >
+              Men's Top Wear {isMenBottomWear ? <ChevronRightIcon /> : null}
+              <Menu isOpen={isMenBottomWear}>
+                <MenuList
+                  position="absolute"
+                  top="0"
+                  left="220px"
+                  //    right=""
+                  ml="90%" // Adjust this value as needed
+                  zIndex="999"
+                  minWidth="200px"
+                  boxShadow="md"
+                  bg="white"
+                  borderRadius="md"
+                >
+                  {/* Add your nested menu items here */}
+                  <MenuItem>All</MenuItem>
+                  <MenuItem>Men's T-Shirts</MenuItem>
+                  <MenuItem>Men's Formal T-Shirts</MenuItem>
+                  <MenuItem>Men's Kurtas</MenuItem>
+                  <MenuItem>Men's Ethnic Sets</MenuItem>
+                  <MenuItem>Men's Blazers</MenuItem>
+                </MenuList>
+              </Menu>
+            </MenuItem>
+
+            <MenuItem
+              onMouseEnter={() => setWomenWear(true)}
+              onMouseLeave={() => setWomenWear(false)}
+            >
+              Women's Ethnic {isWomenWear ? <ChevronRightIcon /> : null}
+              <Menu isOpen={isWomenWear}>
+                <MenuList
+                  position="absolute"
+                  top="0"
+                  left="220px"
+                  //    right=""
+                  ml="90%" // Adjust this value as needed
+                  zIndex="999"
+                  minWidth="200px"
+                  boxShadow="md"
+                  bg="white"
+                  borderRadius="md"
+                >
+                  {/* Add your nested menu items here */}
+                  <MenuItem>Trousers</MenuItem>
+                  <MenuItem>Jeans</MenuItem>
+                  <MenuItem>Shorts</MenuItem>
+                </MenuList>
+              </Menu>
+            </MenuItem>
+
+            <MenuItem
+              onMouseEnter={() => setFootwear(true)}
+              onMouseLeave={() => setFootwear(false)}
+            >
+              Men Footwear
+              {isFootwear ? <ChevronRightIcon /> : null}
+              <Menu isOpen={isFootwear}>
+                <MenuList
+                  position="absolute"
+                  top="0"
+                  left="220px"
+                  //    right=""
+                  ml="90%" // Adjust this value as needed
+                  zIndex="999"
+                  minWidth="200px"
+                  boxShadow="md"
+                  bg="white"
+                  borderRadius="md"
+                >
+                  {/* Add your nested menu items here */}
+                  <MenuItem>Trousers</MenuItem>
+                  <MenuItem>Jeans</MenuItem>
+                  <MenuItem>Shorts</MenuItem>
+                </MenuList>
+              </Menu>
+            </MenuItem>
+
+            <MenuItem
+              onMouseEnter={() => setWomenFootwear(true)}
+              onMouseLeave={() => setWomenFootwear(false)}
+            >
+              Women Footwear
+              {isWomenFootWear ? <ChevronRightIcon /> : null}
+              <Menu isOpen={isWomenFootWear}>
+                <MenuList
+                  position="absolute"
+                  top="0"
+                  left="220px"
+                  //    right=""
+                  ml="90%" // Adjust this value as needed
+                  zIndex="999"
+                  minWidth="200px"
+                  boxShadow="md"
+                  bg="white"
+                  borderRadius="md"
+                >
+                  {/* Add your nested menu items here */}
+                  <MenuItem>All</MenuItem>
+                  <MenuItem>Heels</MenuItem>
+                  <MenuItem>Sneaks</MenuItem>
+                  <MenuItem>Long Boot</MenuItem>
+                </MenuList>
+              </Menu>
+            </MenuItem>
             <MenuItem>Watches and Accessories</MenuItem>
             <MenuItem>Women Western</MenuItem>
             <MenuItem>Bags, Suitcases & Luggage</MenuItem>
@@ -91,8 +207,35 @@ const Dropdown = () => {
               </Text>
             </Box>
           </MenuButton>
+
           <MenuList>
-            <MenuItem>Audio</MenuItem>
+            <MenuItem
+             onMouseEnter={() => setIsElectronics(true)}
+             onMouseLeave={() => setIsElectronics(false)}
+            >
+              Audio {isElectronics ? <ChevronRightIcon /> : null}
+              <Menu isOpen={isElectronics}>
+                <MenuList
+                  position="absolute"
+                  top="0"
+                  left="220px"
+                  //    right=""
+                  ml="90%" // Adjust this value as needed
+                  zIndex="999"
+                  minWidth="200px"
+                  boxShadow="md"
+                  bg="white"
+                  borderRadius="md"
+                >
+                  {/* Add your nested menu items here */}
+                  <MenuItem>All</MenuItem>
+                  <MenuItem>Heels</MenuItem>
+                  <MenuItem>Sneaks</MenuItem>
+                  <MenuItem>Long Boot</MenuItem>
+                </MenuList>
+              </Menu>
+            </MenuItem>
+
             <MenuItem>Electronics Gst Store</MenuItem>
             <MenuItem>Cameras & Accessories</MenuItem>
             <MenuItem>Computers peripherals</MenuItem>
@@ -121,7 +264,35 @@ const Dropdown = () => {
             </Box>
           </MenuButton>
           <MenuList>
-            <MenuItem>Home Furnishings</MenuItem>
+            <MenuItem  
+             onMouseEnter={() => setIsFurniture(true)}
+             onMouseLeave={() => setIsFurniture(false)}
+            >Home Furnishings
+            {isFurniture ? <ChevronRightIcon /> : null}
+              <Menu isOpen={isFurniture}>
+                <MenuList
+                  position="absolute"
+                  top="0"
+                  left="220px"
+                  //    right=""
+                  ml="90%" // Adjust this value as needed
+                  zIndex="999"
+                  minWidth="200px"
+                  boxShadow="md"
+                  bg="white"
+                  borderRadius="md"
+                >
+                  {/* Add your nested menu items here */}
+                  <MenuItem>All</MenuItem>
+                  <MenuItem>Heels</MenuItem>
+                  <MenuItem>Sneaks</MenuItem>
+                  <MenuItem>Long Boot</MenuItem>
+                </MenuList>
+              </Menu>
+            </MenuItem>
+
+
+
             <MenuItem>Furniture Studio</MenuItem>
             <MenuItem>Living Room Furniture</MenuItem>
             <MenuItem>Kitchen & Dining</MenuItem>
@@ -158,12 +329,13 @@ const Dropdown = () => {
       </Box>
 
       {/* Beauty, Toys & More */}
-      <Box
+      <Box 
+      
         onMouseEnter={() => setIsBeauty(true)}
         onMouseLeave={() => setIsBeauty(false)}
       >
         <Menu isOpen={isBeauty}>
-          <MenuButton>
+          <MenuButton >
             <Box>
               <Image src="https://rukminim2.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100" />
             </Box>
@@ -174,8 +346,34 @@ const Dropdown = () => {
               </Text>
             </Box>
           </MenuButton>
-          <MenuList>
-            <MenuItem>Men's Grooming</MenuItem>
+          <MenuList >
+            <MenuItem
+             onMouseEnter={() => setIsMensGroom(true)}
+             onMouseLeave={() => setIsMensGroom(false)}
+            >Men's Grooming  {isMensGroom ? <ChevronRightIcon /> : null}
+              <Menu isOpen={isMensGroom}>
+                <MenuList
+                  position="absolute"
+                  top="0"
+                  left="100px"
+                  //    right=""
+                //   ml="90%" // Adjust this value as needed
+                  zIndex="999"
+                  minWidth="200px"
+                  boxShadow="md"
+                  bg="white"
+                  borderRadius="md"
+                >
+                  {/* Add your nested menu items here */}
+                  <MenuItem>All</MenuItem>
+                  <MenuItem>Heels</MenuItem>
+                  <MenuItem>Sneaks</MenuItem>
+                  <MenuItem>Long Boot</MenuItem>
+                </MenuList>
+              </Menu> </MenuItem>
+
+
+
             <MenuItem>Food & Drinks</MenuItem>
             <MenuItem>Nutrition & Health Care</MenuItem>
             <MenuItem>Baby Care</MenuItem>
@@ -193,11 +391,11 @@ const Dropdown = () => {
         <Menu isOpen={isTwoWheelers}>
           <MenuButton>
             <Box>
-            <Image src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100" />
+              <Image src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100" />
             </Box>
             <Box>
               <Text fontWeight="550" textAlign="center" fontSize="16px">
-              Two Wheelers 
+                Two Wheelers
                 {isTwoWheelers ? <ChevronUpIcon /> : <ChevronDownIcon />}
               </Text>
             </Box>
@@ -205,13 +403,9 @@ const Dropdown = () => {
           <MenuList>
             <MenuItem>Petrol Vehicles</MenuItem>
             <MenuItem>Electric Vehicles</MenuItem>
-           
           </MenuList>
         </Menu>
       </Box>
-
-
-     
     </SimpleGrid>
   );
 };
