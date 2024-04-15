@@ -40,10 +40,13 @@ const Footer = () => {
         </Box>
         <Box fontSize={"14px"}>CONSUMER POLICY
         <Box >
-            <Text> Contact Us</Text>
-            <Text> About Us</Text>
-            <Text> Careers Us</Text>
-            <Text> Flipkart Stories</Text>
+            <Text>Cancellations & Returns</Text>
+            <Text>Terms of use</Text>
+            <Text>Security</Text>
+            <Text>Privacy</Text>
+            <Text>Sitemap</Text>
+            <Text>Grievance Redressal</Text>
+            <Text>EPR Compliance</Text>
           </Box>
         </Box>
       </Box>
