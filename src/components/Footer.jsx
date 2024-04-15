@@ -22,18 +22,20 @@ const Footer = () => {
         </Box>
         <Box fontSize={"14px"}>GROUP COMPANIES
         <Box>
-            <Text> Contact Us</Text>
-            <Text> About Us</Text>
-            <Text> Careers Us</Text>
-            <Text> Flipkart Stories</Text>
+            <Text>Myntra</Text>
+            <Text>Flipkart Wholesale</Text>
+            <Text> Cleartrip</Text>
+            <Text>Shopsy</Text>
           </Box>
         </Box>
         <Box fontSize={"14px"}>HELP
         <Box>
-            <Text> Contact Us</Text>
-            <Text> About Us</Text>
-            <Text> Careers Us</Text>
-            <Text> Flipkart Stories</Text>
+            <Text>Payments</Text>
+            <Text>Shipping</Text>
+            <Text>Cancellations </Text>
+            <Text>Returns</Text>
+            <Text>FAQ</Text>
+            <Text>Report Infringement</Text>
           </Box>
         </Box>
         <Box fontSize={"14px"}>CONSUMER POLICY
