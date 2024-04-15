@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Box, Text } from "@chakra-ui/react";
 const Footer = () => {
   return (
-    <Flex p={10} bg="RGBA(0, 0, 0, 0.92)" justifyContent="space-evenly" alignItems="center">
+    <Flex p={16} h={"60vh"} bg="RGBA(0, 0, 0, 0.92)" justifyContent="space-evenly" alignItems="center">
       <Box
         color="white"
         display="flex"
@@ -10,7 +10,7 @@ const Footer = () => {
         alignItems="center"
         gap="20px"
       >
-        <Box>
+        <Box fontSize={"14px"}>
           ABOUT
           <br />
           <Box>
@@ -20,7 +20,7 @@ const Footer = () => {
             <Text> Flipkart Stories</Text>
           </Box>
         </Box>
-        <Box>GROUP COMPANIES
+        <Box fontSize={"14px"}>GROUP COMPANIES
         <Box>
             <Text> Contact Us</Text>
             <Text> About Us</Text>
@@ -28,7 +28,7 @@ const Footer = () => {
             <Text> Flipkart Stories</Text>
           </Box>
         </Box>
-        <Box>HELP
+        <Box fontSize={"14px"}>HELP
         <Box>
             <Text> Contact Us</Text>
             <Text> About Us</Text>
@@ -36,8 +36,8 @@ const Footer = () => {
             <Text> Flipkart Stories</Text>
           </Box>
         </Box>
-        <Box>CONSUMER POLICY
-        <Box>
+        <Box fontSize={"14px"}>CONSUMER POLICY
+        <Box >
             <Text> Contact Us</Text>
             <Text> About Us</Text>
             <Text> Careers Us</Text>
@@ -56,33 +56,19 @@ const Footer = () => {
         gap="20px"
       >
         &nbsp;
-          <Box>
+          <Box fontSize={"14px"}>
           MAIL US
           <br />
-          <Box>
+          <Box >
             <Text> Contact Us</Text>
             <Text> About Us</Text>
             <Text> Careers Us</Text>
             <Text> Flipkart Stories</Text>
           </Box>
         </Box>
-        <Box>GROUP COMPANIES
-        <Box>
-            <Text> Contact Us</Text>
-            <Text> About Us</Text>
-            <Text> Careers Us</Text>
-            <Text> Flipkart Stories</Text>
-          </Box>
-        </Box>
-        <Box>HELP
-        <Box>
-            <Text> Contact Us</Text>
-            <Text> About Us</Text>
-            <Text> Careers Us</Text>
-            <Text> Flipkart Stories</Text>
-          </Box>
-        </Box>
-        <Box>REGISTERED ADDRESS
+       
+      
+        <Box fontSize={"14px"}>REGISTERED ADDRESS
         <Box>
             <Text>Flipkart Private Limited</Text>
             <Text>Building Alyssia Begonia</Text>
