@@ -4,6 +4,7 @@ import OffersCards from "./OffersCards";
 import Electronics from "./components/Electronics";
 import Navbar from "./components/Navbar";
 import SimpleSlider from "./components/SimpleSlider";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -16,6 +17,8 @@ function App() {
       <Electronics />
       <br />
       <OffersCards/>
+
+      <Footer/>
     </>
   );
 }
