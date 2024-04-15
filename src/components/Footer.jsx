@@ -42,9 +42,9 @@ const Footer = () => {
               <Text>Payments</Text>
               <Text>Shipping</Text>
               <Text>Cancellations </Text>
-              <Text>Returns</Text>
+              {/* <Text>Returns</Text> */}
               <Text>FAQ</Text>
-              <Text>Report Infringement</Text>
+              {/* <Text>Report Infringement</Text> */}
             </Box>
           </Box>
           <Box fontSize={"14px"}>
@@ -54,9 +54,9 @@ const Footer = () => {
               <Text>Terms of use</Text>
               <Text>Security</Text>
               <Text>Privacy</Text>
-              <Text>Sitemap</Text>
-              <Text>Grievance Redressal</Text>
-              <Text>EPR Compliance</Text>
+              {/* <Text>Sitemap</Text> */}
+              {/* <Text>Grievance Redressal</Text>
+              <Text>EPR Compliance</Text> */}
             </Box>
           </Box>
         </Box>
