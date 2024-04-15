@@ -62,11 +62,14 @@ const Dropdown = () => {
             </Box>
           </MenuButton>
           <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Men's Bottom Wear </MenuItem>
+            <MenuItem>Women's Ethnic</MenuItem>
+            <MenuItem>Men Footwear</MenuItem>
+            <MenuItem>Women Footwear</MenuItem>
+            <MenuItem>Watches and Accessories</MenuItem>
+            <MenuItem>Women Western</MenuItem>
+            <MenuItem>Bags, Suitcases & Luggage</MenuItem>
+            <MenuItem>Kids</MenuItem>
           </MenuList>
         </Menu>
       </Box>
@@ -89,11 +92,13 @@ const Dropdown = () => {
             </Box>
           </MenuButton>
           <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Audio</MenuItem>
+            <MenuItem>Electronics Gst Store</MenuItem>
+            <MenuItem>Cameras & Accessories</MenuItem>
+            <MenuItem>Computers peripherals</MenuItem>
+            <MenuItem>Gaming</MenuItem>
+            <MenuItem>Health & Personal Care</MenuItem>
+            <MenuItem>Laptop Accessories</MenuItem>
           </MenuList>
         </Menu>
       </Box>
@@ -116,11 +121,14 @@ const Dropdown = () => {
             </Box>
           </MenuButton>
           <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Home Furnishings</MenuItem>
+            <MenuItem>Furniture Studio</MenuItem>
+            <MenuItem>Living Room Furniture</MenuItem>
+            <MenuItem>Kitchen & Dining</MenuItem>
+            <MenuItem>Bedroom Furniture</MenuItem>
+            <MenuItem>Space Saving Furniture</MenuItem>
+            <MenuItem>Home Decor</MenuItem>
+            <MenuItem>Tools & Utility</MenuItem>
           </MenuList>
         </Menu>
       </Box>
@@ -167,11 +175,12 @@ const Dropdown = () => {
             </Box>
           </MenuButton>
           <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Men's Grooming</MenuItem>
+            <MenuItem>Food & Drinks</MenuItem>
+            <MenuItem>Nutrition & Health Care</MenuItem>
+            <MenuItem>Baby Care</MenuItem>
+            <MenuItem>Toys & School Supplies</MenuItem>
+            <MenuItem>Sports & Fitness </MenuItem>
           </MenuList>
         </Menu>
       </Box>
@@ -194,11 +203,9 @@ const Dropdown = () => {
             </Box>
           </MenuButton>
           <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Petrol Vehicles</MenuItem>
+            <MenuItem>Electric Vehicles</MenuItem>
+           
           </MenuList>
         </Menu>
       </Box>
